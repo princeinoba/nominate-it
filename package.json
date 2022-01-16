@@ -1,0 +1,19 @@
+{
+  "name": "top-5-list",
+  "version": "1.0.0",
+  "description": "Nominate your top 5 movies",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angelica Mapeso",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.10"
+  }
+}
